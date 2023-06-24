@@ -1,0 +1,14 @@
+.contact-link{
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.contact-link:before{
+   content: '';
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   background-image: url('/img/icons/telegram.svg');
+   background-size: cover;
+   vertical-align: middle;
+}

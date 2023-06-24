@@ -18,7 +18,7 @@ const del = require('del')
 // Пути исходных файлов src и пути к результирующим файлам dest
 const paths = {
   html: {
-    src: ['src/*.html', 'src/*.pug'],
+    src: ['src/**/*.html', 'src/pug/**/*.pug'],
     dest: 'dist/'
   },
   styles: {
@@ -26,7 +26,7 @@ const paths = {
     dest: 'dist/css/'
   },
   scripts: {
-    src: ['src/scripts/**/*.js'],
+    src: ['src/js/**/*.js'],
     dest: 'dist/js/'
   },
   images: {
@@ -39,6 +39,7 @@ const paths = {
 function clean() {
   return del(['dist/*', '!dist/img'])
 }
+
 
 // Обработка html и pug
 function html() {
@@ -118,7 +119,6 @@ function watch() {
 
 // Таски для ручного запуска с помощью gulp clean, gulp html и т.д.
 exports.clean = clean
-
 exports.html = html
 exports.styles = styles
 exports.scripts = scripts

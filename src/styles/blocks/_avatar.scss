@@ -1,0 +1,43 @@
+.avatar{
+
+}
+
+.avatar__photo{
+   width: 630px;
+   height: 650px;
+   position: relative;
+
+   &--preview{
+
+      &::before{
+         content: '';
+         position: absolute;
+         bottom: -30%;
+         right: 0;
+         z-index: 2;
+         display: inline-block;
+         width: 300px;
+         height: 600px;
+         background-image: url('/img/main-page/preview/telephone-box.png');
+         background-size: contain;
+         background-repeat: no-repeat;
+         transform: rotate(30deg);
+         filter: drop-shadow(0 0 10px rgb(180, 50, 50));
+      }
+      &::after{
+         content: '';
+         position: absolute;
+         bottom: -20%;
+         left: -15%;
+         display: inline-block;
+         width: 300px;
+         height: 600px;
+         background-image: url('/img/main-page/preview/big-ben.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         transform: rotate(-25deg);
+         filter: drop-shadow(0 0 10px rgb(180, 135, 50));
+      }
+   }
+
+}

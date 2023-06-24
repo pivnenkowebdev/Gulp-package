@@ -1,0 +1,60 @@
+.wrapper-main-title {
+
+}
+
+.main-title {
+   color: $colorMaitTitle;
+   font-size: 74px;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+.wrapper-main-subtitle {
+   margin-bottom: 30px;
+}
+
+.main-subtitle {
+   font-size: 74px;
+   font-weight: 500;
+}
+
+.wrapper-section-title{
+   margin-bottom: 30px;
+}
+
+.section-title{
+   font-size: 57px;
+   font-weight: 700;
+}
+
+.section-title__first-part{
+   &--one{
+      color: $colorPartTitleOne;
+   }
+   &--second{
+      color: $colorPartTitleTwo;
+   }
+   &--tree{
+      color: $colorPartTitleTree;
+   }
+}
+
+.wrapper-section-small-title{
+   
+}
+
+.section-small-title{
+   
+}
+
+.section-small-title__first-part{
+   &--one{
+      color: $colorPartTitleOne;
+   }
+   
+}
+
+.section-small-title{
+   font-size: 37px;
+   font-weight: 700;
+}

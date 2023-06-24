@@ -1,0 +1,11 @@
+.context-btn{
+   display: inline-block;
+   border-radius: 114px;
+   padding-left: 94px;
+   padding-right: 94px;
+   height: 70px;
+   line-height: 70px;
+   font-weight: 700;
+   background-color: $backgroundContextBtn;
+   box-shadow: 5px 10px 40px 8px rgba(255, 255, 255, 0.7), inset 0 0 10px 5px rgba(233, 229, 229, 0.7);
+}
