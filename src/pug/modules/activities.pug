@@ -1,13 +1,56 @@
+include ../mixins/card-activities-first.pug
+include ../mixins/card-activities-second.pug
 .activities 
    .wrapper-section-title 
       h4.section-title 
          span.section-title__first-part.section-title__first-part--tree Форматы 
          | Обучения
-      .activities__item 
-         .wrapper-section-small-title
-            h6.section-small-title 
-               span.section-small-title__first-part.section-small-title__first-part--one Offline 
-               | in Tbilisi
+   .activities__item 
+      .wrapper-section-subtitle
+         h6.section-subtitle 
+            span.section-subtitle__first-part.section-subtitle__first-part--one Offline 
+            | in Tbilisi
       .activities__row-card 
-         include ./card-activities.pug
+         +cardFirst('01','Разговорные клубы','Подходит всем, кому нужно разбить языковой барьер и разговориться','деление студентов по уровням (А1-А2, В1-С1)','мини-группы до 6 человек','преподаватель и готовая программа встречи','длительность: 1-1,5 часа в зависимости от уровня','https://t.me/Katyagerasimenko_eng')
+
+         +cardFirst('02','Групповые уроки','Идеально для равномерного и комплексного изучения языка','деление студентов по уровням (А1-А2, А2-В1)','уроки 2 раза в неделю на базе школы','регулярная проверка знаний и обратная связь от преподавателя','длительность занятия 1 час','https://t.me/Katyagerasimenko_eng')
          
+         +cardFirst('03',' Киновечера','Отличная возможность улучшить навыки понимания нативной речи, а также ощутимо расширить словарный запас','просмотр фильмов на большом экране на английском с английскими субтитрами','после встречи 30 минут speaking club по теме кино','присутствие преподавателя','готовая программа встречи на 2 часа','https://t.me/Katyagerasimenko_eng')
+
+   .activities__item 
+      .wrapper-section-subtitle
+         h6.section-subtitle 
+            span.section-subtitle__first-part.section-subtitle__first-part--second Online 
+            | Courses
+      .activities__row-card 
+         +cardSecond('01','Онлайн-курс А1-А2 (3 месяца)','Отличный старт для тех, чьи цели - это комфортно жить в новой стране или в будущем дойти до нужного уровня для поиска работы.','Курс построен на бытовых темах.','Курс имеет 3 тарифа.')
+            h3.card-activities__title Онлайн-курс <br>А1-А2 (3 месяца)
+         +cardSecond('02','Онлайн-курс А2-В1 (3 месяца)','Отлично подойдет тем, кто уже знает основы языка и готов улучшить навык говорения.','По итогу вы получите качественный разговорный уровень для жизни, а также сможете общаться с зарубежными коллегами намного комфортнее. ','Курс имеет 3 тарифа.')
+            h3.card-activities__title Онлайн-курс <br>А2-В1 (3 месяца)
+         +cardSecond('03','Онлайн-курс В1-В2 (3 месяца)','Идеальное решение для всех, кто уже обладает разговорным навыком и хочет уметь общаться на любые темы. ','Также подойдет тем, кто ищет новую работу, а в резюме нужно указать заветный В2. ','Курс имеет 3 тарифа.')
+            h3.card-activities__title Онлайн-курс <br> В1-В2 (3 месяца)
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         //- number,title,subtitle,descriptionFirst,descriptionSecond,descriptionTree,descriptionFour,link

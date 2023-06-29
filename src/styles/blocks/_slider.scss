@@ -1,0 +1,189 @@
+
+.reviews-slider{
+   position: relative;
+   max-width: 1579px;
+   // padding-bottom: 54px;
+   // padding-top: 54px;
+}
+
+.slick-list{
+   overflow: hidden;
+   min-height: 350px;
+}
+
+.slick-track{
+   min-height: 350px;
+}
+
+.slick-arrow{
+   box-sizing: border-box;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 54px;
+   height: 54px;
+   border-radius: 50%;
+   background-color: rgba(0, 189, 237,0.8);
+   font-size: 0;
+   line-height: 0;
+   transition: background-color 0.5s;
+   cursor: pointer;
+
+   svg{
+      width: 50%;
+      height: 50%;
+   }
+
+   &:hover{
+      background-color: #fff;
+
+      path{ 
+         fill: rgba(0, 189, 237,0.8);
+         transition: fill 0.5s;
+      }
+   }
+   
+   &:active{
+      background-color: rgba(0, 189, 237,0.8);
+
+      path{ 
+         fill: #fff;
+         transition: fill 0.5s;
+      }
+   }
+
+      path{
+         transition: fill 0.5s;
+   }
+}
+.slick-next{
+   right: 0;
+   padding-left: 0.5%;
+}
+.slick-prev{
+   left: 0;
+   padding-right: 0.5%;
+}
+
+.slick-track{
+   display: flex;
+   align-items: center;
+}
+
+.slick-dots{
+   position: absolute;
+   height: 25px;
+   bottom: -15%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex; 
+   column-gap: 20px;
+}
+
+.slick-dots button{
+   width: 11px;
+   height: 11px;
+   background-color: rgb(255, 255, 255);
+   border: 3px solid rgba(0, 190, 237, 0.5);
+   border-radius: 50%;
+   font-size: 0;
+   line-height: 0;
+   flex-shrink: 0;
+   transition: transform 1.5s, border-color 1.5s, border-width 1.5s;
+}
+
+
+.slick-dots li.slick-active button{
+   // width: 25px;
+   // height: 25px;
+   transform: scale(3);
+   border-color:rgb(0, 189, 237);
+   border-width: 2px;
+}
+
+.slider-item{
+   position: relative;
+   display: flex;
+   column-gap: 15px;
+   align-items: center;
+   flex-shrink: 0;
+   margin: 10px 50px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-right: 20px;
+   padding-left: 20px;
+   width: 391px;
+   height: 249px;
+   border-radius: 47px;
+
+   background-color: #00BDED1F;
+   color: #000;
+   transition: transform 1.5s, background-color 1.5s, color 2s;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   overflow: hidden;
+
+   &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f5f5f5d2;
+      backdrop-filter: blur(2px);
+      transition: opacity 1.5s;
+   }
+}
+
+.slick-center{
+   background-color: #00BDED;
+   transform:scale(1.4);
+   transition: transform 1.5s, opacity 1.5s;
+   color: $colorTextSlider;
+
+   &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f5f5f5d2;
+      opacity: 0;
+   }
+
+   .slider-item__avatar{
+      border-color: #fff;
+   }
+}
+
+.slider-item__avatar{
+   border: 2px solid transparent;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   flex-shrink: 0;
+   transition: border-color 2s;
+}
+
+.slider-item__img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   overflow: hidden;
+
+   img{
+      object-fit: cover;
+   }
+}
+
+// without jump on the ;ast slide

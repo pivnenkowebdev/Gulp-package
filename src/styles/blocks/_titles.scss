@@ -39,22 +39,30 @@
    }
 }
 
-.wrapper-section-small-title{
-   
+.wrapper-section-subtitle{
+   margin-bottom: 30px;
 }
 
-.section-small-title{
-   
-}
-
-.section-small-title__first-part{
+.section-subtitle__first-part{
    &--one{
       color: $colorPartTitleOne;
+   }
+   &--second{
+      color: $colorPartTitleTwo;
    }
    
 }
 
-.section-small-title{
+.section-subtitle{
    font-size: 37px;
+   font-weight: 700;
+}
+
+.wrapper-block-title{
+   margin-bottom: 60px;
+}
+
+.block-title{
+   font-size: 57px;
    font-weight: 700;
 }

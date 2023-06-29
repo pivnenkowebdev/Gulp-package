@@ -27,12 +27,12 @@
       &::after{
          content: '';
          position: absolute;
-         bottom: -20%;
+         bottom: -15%;
          left: -15%;
          display: inline-block;
-         width: 300px;
-         height: 600px;
-         background-image: url('/img/main-page/preview/big-ben.png');
+         width: 400px;
+         height: 700px;
+         background-image: url('/img/main-page/preview/liberty.png');
          background-size: cover;
          background-repeat: no-repeat;
          transform: rotate(-25deg);
