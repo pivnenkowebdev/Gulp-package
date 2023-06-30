@@ -43,6 +43,11 @@
    margin-bottom: 30px;
 }
 
+.section-subtitle{
+   font-size: 37px;
+   font-weight: 700;
+}
+
 .section-subtitle__first-part{
    &--one{
       color: $colorPartTitleOne;
@@ -53,16 +58,27 @@
    
 }
 
-.section-subtitle{
-   font-size: 37px;
-   font-weight: 700;
-}
-
 .wrapper-block-title{
    margin-bottom: 60px;
 }
 
 .block-title{
    font-size: 57px;
+   font-weight: 700;
+}
+
+.reviews,.contacts{
+   .wrapper-block-title{
+      max-width: 1160px;
+      margin: 0 auto;
+   }
+}
+
+.wrapper-context-title{
+   margin-bottom: 30px;
+}
+
+.context-title{
+   font-size: 24px;
    font-weight: 700;
 }

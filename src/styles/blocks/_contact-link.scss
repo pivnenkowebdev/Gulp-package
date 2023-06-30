@@ -1,14 +1,17 @@
 .contact-link{
    font-size: 18px;
    font-weight: 600;
+   display: flex;
+   align-items: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   column-gap: 10px;
+   
+   &__holder-ico{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      // background-color: blueviolet;
+   }
 }
 
-.contact-link:before{
-   content: '';
-   display: inline-block;
-   width: 70px;
-   height: 70px;
-   background-image: url('/img/icons/telegram.svg');
-   background-size: cover;
-   vertical-align: middle;
-}

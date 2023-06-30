@@ -38,5 +38,3 @@ $('.reviews-slider').slick({
 
   </div>`,
 });
-	
-console.log(document.querySelector('.slick-prev'));

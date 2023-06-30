@@ -122,7 +122,7 @@
 
    background-color: #00BDED1F;
    color: #000;
-   transition: transform 1.5s, background-color 1.5s, color 2s;
+   transition: transform 1.5s, background-color 1.5s, color 1.5s;
    font-size: 14px;
    font-weight: 400;
    line-height: 18px;
@@ -144,7 +144,7 @@
 .slick-center{
    background-color: #00BDED;
    transform:scale(1.4);
-   transition: transform 1.5s, opacity 1.5s;
+   transition: transform 1.5s, opacity 1.5s, color 1.5s;
    color: $colorTextSlider;
 
    &:before{

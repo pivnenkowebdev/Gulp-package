@@ -22,4 +22,4 @@ $(".reviews-slider").slick({draggable:!0,centerMode:!0,slidesToShow:3,slidesToSc
 </defs>
 </svg>
 
-  </div>`}),console.log(document.querySelector(".slick-prev"));
+  </div>`});

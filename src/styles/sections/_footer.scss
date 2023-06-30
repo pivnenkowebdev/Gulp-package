@@ -1,3 +1,15 @@
 .footer{
+   padding-top: 100px;
+   padding-bottom: 60px;
+   background: -webkit-linear-gradient(107deg, #ffffff,#88addd,#ac9ce8);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(107deg, #ffffff,#88addd,#ac9ce8);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                    
+   
+   border-radius: 50% 50% 0 0 / 10% 10% 0 0;
+
+   &__links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 40px;
+   }
 
 }
