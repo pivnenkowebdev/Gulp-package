@@ -5,11 +5,24 @@
    
    border-radius: 50% 50% 0 0 / 10% 10% 0 0;
 
-   &__links{
+   &__content{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      column-gap: 40px;
+   }
+
+   &__copyright{
+      text-align: center;
+      color: #fff;
+
+      p:not(:last-child){
+         margin-bottom: 15px;
+      }
+
+      a{
+         text-decoration: underline;
+         text-underline-offset: 4px;
+      }
    }
 
 }
