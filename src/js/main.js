@@ -38,3 +38,143 @@ $('.reviews-slider').slick({
 
   </div>`,
 });
+
+// Gsap
+(()=>{
+
+// ------------------parallax
+// preview
+
+const preview = document.querySelector('.preview');
+const previewAvatar = document.querySelector('.avatar__photo--preview');
+const paralaxImagePreviewFirst = document.querySelector('.avatar__parallax-img--first')
+const paralaxImagePreviewSecond =document.querySelector('.avatar__parallax-img--second');
+const author = document.querySelector('.author');
+
+const initialX = preview.offsetLeft + preview.offsetWidth / 2;
+const initialY = preview.offsetTop + preview.offsetHeight / 2;
+
+// bunner
+const bunnerIconFirst = document.querySelector('.bunner__icon--first');
+const bunnerIconSecond = document.querySelector('.bunner__icon--second');
+const bunnerIconLast = document.querySelector('.bunner__icon--last');
+
+const bunnerCircleBig = document.querySelector('.bunner__circles-item--big');
+const bunnerCircleMedium = document.querySelector('.bunner__circles-item--medium');
+const bunnerCircleSmall = document.querySelector('.bunner__circles-item--small');
+
+
+
+document.addEventListener('mousemove', function(event) {
+  
+  const mouseX = event.clientX - initialX;
+  const mouseY = event.clientY - initialY;
+
+// preview
+  gsap.to(
+    paralaxImagePreviewFirst, 
+    {
+    x: mouseX * 0.05, 
+    y: mouseY * 0.05, 
+    ease: 'power2.out' 
+    },);
+
+  gsap.to(
+    paralaxImagePreviewSecond, 
+    {
+    x: mouseX * 0.03, 
+    y: mouseY * 0.03, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    previewAvatar, 
+    {
+    x: mouseX * 0.01, 
+    y: mouseY * 0.01, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    author, 
+    {
+    x: mouseX * 0.01, 
+    y: mouseY * 0.01, 
+    ease: 'power2.out' 
+    },'<');
+
+    // bunner
+  gsap.to(
+    bunnerIconFirst, 
+    {
+    x: mouseX * 0.02, 
+    y: mouseY * 0.02, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    bunnerIconSecond, 
+    {
+    x: mouseX * 0.03, 
+    y: mouseY * 0.03, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    bunnerIconLast, 
+    {
+    x: mouseX * 0.02, 
+    y: mouseY * 0.02, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    bunnerCircleBig, 
+    {
+    x: mouseX * 0.03, 
+    y: mouseY * 0.03, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    bunnerCircleMedium, 
+    {
+    x: mouseX * 0.02, 
+    y: mouseY * 0.02, 
+    ease: 'power2.out' 
+    },'<');
+
+  gsap.to(
+    bunnerCircleSmall, 
+    {
+    x: mouseX * 0.01, 
+    y: mouseY * 0.01, 
+    ease: 'power2.out' 
+    },'<');
+
+   
+});
+})()
+
+// scroll
+// smooth scroll to anchor-link
+document.querySelectorAll('a[href^="#"').forEach(link => {
+
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      let href = this.getAttribute('href').substring(1);
+
+      const scrollTarget = document.getElementById(href);
+
+      const topOffset = document.querySelector('.header').offsetHeight;
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
+
+      window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+  });
+});
+ 

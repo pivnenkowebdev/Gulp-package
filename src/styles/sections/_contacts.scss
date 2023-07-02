@@ -1,20 +1,21 @@
 .contacts{
    padding-top: 200px;
    padding-bottom: 200px;
-
+   
    &__content{
       max-width: 1160px;
       margin: 0 auto;
    }
-
+   
    .wrapper-block-title{
       margin-bottom: 50px;
    }
-
+   
    .contacts__info{
       display: flex;
       column-gap: 111px;
       align-items: center;
+      position: relative;
    }
 
    .contacts__first-row{
@@ -31,4 +32,5 @@
       margin-bottom: 20px;
       }
    }
+
 }

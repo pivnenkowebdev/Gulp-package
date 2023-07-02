@@ -1,4 +1,10 @@
 .reviews{
    padding-top: 200px;
    padding-bottom: 200px;
+
+   &__content{
+      position: relative;
+   }
+
 }
+

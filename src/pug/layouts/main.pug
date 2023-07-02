@@ -7,12 +7,22 @@ html(lang="ru")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       link(rel="stylesheet", href="./css/style.min.css")
       title #{title}
+      <meta property="og:title" content="Welcome English"/>
+      <meta property="og:description" content="Школа английского языка"/>
+      <meta property="og:image" content="./img/icons/opengraph-logo.svg"/>
+      <meta property="og:type" content="site"/>
+      <meta property="og:locale" content="ru_RU" />
+      //-- <meta property="og:url" content= "" /> url сайта
+      //-- <meta property="og:site_name" content="" /> название сайта
+      link(rel="shortcut icon", href="./img/favicon/favicon.ico", type="image/x-icon")
+      
    body 
       include ../sections/header.pug
 
       block content
       
       script(src="https://code.jquery.com/jquery-3.7.0.min.js")
+      script(src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js")
       script(src="./js/libs/slick.min.js")
       script(src="./js/main.js") 
 

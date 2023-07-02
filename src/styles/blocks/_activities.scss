@@ -1,8 +1,15 @@
 .activities{
 
-} 
+   .wrapper-section-title,
+   .wrapper-section-subtitle{
+      position: relative;
+      z-index: 2;
+   }
    
+  
 .activities__item{
+   position: relative;
+
    &:not(:last-child){
       margin-bottom: 150px;
    }
@@ -10,8 +17,9 @@
 
 .activities__row-card{
    display: grid;
-   grid-template-columns: repeat(3,460px);
-   grid-auto-rows: 1fr;
+   grid-template-columns: repeat(3,360px);
+   grid-auto-rows: 700px;
    column-gap: 30px;
    justify-content: center;
 } 
+}

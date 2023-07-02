@@ -45,6 +45,7 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
+   filter: drop-shadow(0 0 5px #fafafa);
    &--small{
       width: 137px;
       height: 137px;
@@ -66,17 +67,17 @@
 
    &--first{
       bottom: 35%;
-      right: -6%;
+      right: -5%;
       filter: drop-shadow(0 0 20px #FF577F);
    }
    &--second{
       bottom: 40%;
-      right:10%;
+      right:12%;
       filter: drop-shadow(0 0 20px #e6cb2f);
    }
    &--last{
       bottom: 0;
-      right: 15%;
+      right: 17%;
       filter: drop-shadow(0 0 20px #34b8f5);
    }
 }
