@@ -5,7 +5,10 @@
    
    border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
 
-
+   @media (max-width: 1440px) {
+      padding-top: 150px;
+      padding-bottom: 30px;
+   }
 }
 
 .preview__content{
@@ -16,5 +19,9 @@
 
    &>*{
       flex-shrink: 0;
+   }
+
+   @media (max-width: 1440px) {
+      column-gap: 30px;
    }
 }

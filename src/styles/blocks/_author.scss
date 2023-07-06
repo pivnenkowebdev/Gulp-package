@@ -1,6 +1,10 @@
 .author{
    width: 680px;
    z-index: 3;
+
+   @media (max-width: 1440px) {
+      width: 550px;
+   }
 }
 
 .author__description {

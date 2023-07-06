@@ -8,9 +8,12 @@
 
    &--preview{
       filter: drop-shadow(0 0 10px rgba(99, 95, 95, 0.61));
-
    }
    
+   @media (max-width: 1440px) {
+      width: 400px;
+      height: 450px;
+   }
 }
 
 .avatar__parallax-img{
@@ -26,6 +29,13 @@
       height: 600px;
       transform: rotate(30deg);
       filter: drop-shadow(0 0 10px rgb(180, 50, 50));
+         
+         @media (max-width: 1440px) {
+            width: 200px;
+            height: 350px;
+            bottom: -15%;
+            right: 0;
+         }
 }
 
 .avatar__parallax-img--second{
@@ -35,4 +45,9 @@
          height: 700px;
          transform: rotate(-25deg);
          filter: drop-shadow(0 0 10px rgb(74, 133, 130));
+
+            @media (max-width: 1440px) {
+               width: 200px;
+               height: 500px;
+            }
 }

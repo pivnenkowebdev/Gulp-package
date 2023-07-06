@@ -7,15 +7,29 @@
    font-size: 74px;
    font-weight: 700;
    text-transform: capitalize;
+
+      @media (max-width: 1440px) {
+         font-size: 60px;
+         line-height: 1.1em;
+      }
 }
 
 .wrapper-main-subtitle {
    margin-bottom: 30px;
+
+      @media (max-width: 1440px) {
+         margin-bottom: 10px;
+      }
 }
 
 .main-subtitle {
    font-size: 74px;
    font-weight: 500;
+
+   @media (max-width: 1440px) {
+      font-size: 60px;
+      line-height: 1.1em;
+   }
 }
 
 .wrapper-section-title{
