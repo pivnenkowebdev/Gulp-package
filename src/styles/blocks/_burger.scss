@@ -25,6 +25,7 @@
       border: 2px solid #a963eb;
       border-radius: 50%;
       background-color: #ffffff00;
+      transition: width 0.5s, height 0.5s;
    }
 
    &__line{
@@ -32,5 +33,30 @@
       height: 2px;
       width: 60%;
       background-color: #ffffff;
+      transition: transform 0.5s;
    }
 }
+
+.burger {
+
+   &.active {
+     .burger__line--first {
+      transform: rotate(-45deg) translate(-6px, 6px);
+     }
+ 
+     .burger__line--second {
+       transform: scale(0);
+     }
+ 
+     .burger__line--third {
+      transform: rotate(45deg) translate(-5px, -6px);
+
+     }
+
+     &::before{
+      width:0;
+      height:0;
+     }
+   }
+ }
+ 

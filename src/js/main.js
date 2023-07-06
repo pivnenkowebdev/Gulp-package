@@ -259,28 +259,50 @@ window.addEventListener('DOMContentLoaded', () => {
       const burger = document.querySelector('.burger');
       const mobileMenu = document.querySelector('.header__mobile .header__menu');
       const mobileLink = document.querySelectorAll('.header__mobile .header__menu a')
+      const overlay = document.querySelectorAll('.overlay-header');
 
       // open\close mobile menu
       burger.addEventListener('click',function(){
-         burger.classList.toggle('active');
-         mobileMenu.classList.toggle('active');
-         document.body.classList.toggle('active')
+
+        burger.classList.toggle('active');
+
+        mobileMenu.classList.toggle('active');
+
+        document.body.classList.toggle('active')
+
+        overlay.forEach((item)=>{
+
+          item.classList.toggle('active');
+
+        })
+
       })
 
       // close mobile menu when click to link
       mobileLink.forEach((item)=>{
-         item.addEventListener('click',()=>{
-            burger.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-            document.body.classList.toggle('active');
-         })
+
+        item.addEventListener('click',()=>{
+
+            burger.classList.remove('active');
+
+            mobileMenu.classList.remove('active');
+
+            document.body.classList.remove('active');
+
+        })
+
       })
+
 
       // resize and close mobile menu
       window.addEventListener('resize',function(){
-         burger.classList.remove('active');
-         mobileMenu.classList.remove('active');
-         document.body.classList.remove('active');
+
+        burger.classList.remove('active');
+
+        mobileMenu.classList.remove('active');
+
+        document.body.classList.remove('active');
+
       })
 
 
