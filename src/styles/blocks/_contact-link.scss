@@ -39,4 +39,9 @@
    line-height: 1.08;
    text-decoration: underline !important;
    text-underline-offset: 5px;
+
+      @media (max-width: 1199px) {
+         font-size: 16px;
+         line-height: 1.05;
+      }
 }

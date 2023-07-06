@@ -1,35 +1,55 @@
 header.header
-   .container 
-      .header__content 
+   .header__desctop
+      .container 
+         .header__content 
 
-         a.logo(href='index.html')
+            a.logo(href='index.html')
 
-            img(src="./img/icons/main-logo.svg", alt="logo")
+               img(src="./img/icons/main-logo.svg", alt="logo")
 
-         nav.header__menu 
+            nav.header__menu 
 
-            ul.header__menu-list 
-               li 
-                  a(href="#mission") Наша миссия
-               li 
-                  a(href="#advantages") Преимущества
-               li.header__drop-menu Формат обучения
-                  ul
-                     li
-                        a(href="#bunner") Бесплатный урок
-                     li
-                        a(href="#offline") Offline in Tbilisi
-                     li
-                        a(href="#online") Online courses
-               li 
-                  a(href="#reviews") Отзывы 
-               li 
-                  a(href="#contacts") Контакты
+               ul.header__menu-list 
+                  li 
+                     a(href="#mission") Наша миссия
+                  li 
+                     a(href="#advantages") Преимущества
+                  li.header__drop-menu Формат обучения
+                     ul
+                        li
+                           a(href="#bunner") Бесплатный урок
+                        li
+                           a(href="#offline") Offline in Tbilisi
+                        li
+                           a(href="#online") Online courses
+                  li 
+                     a(href="#reviews") Отзывы 
+                  li 
+                     a(href="#contacts") Контакты
+            a.contact-link(href="https://t.me/welcome_english_school"    target='blank')
+               span.contact-link__holder-text Telegram 
+               span.contact-link__holder-ico
+                  img(src="./img/icons/telegram.svg", alt="telegram")
 
-         a.contact-link(href="https://t.me/welcome_english_school" target='blank')
-            span.contact-link__holder-text Telegram 
-            span.contact-link__holder-ico
-               img(src="./img/icons/telegram.svg", alt="telegram")
-
-         
-            
+   .header__mobile 
+      a.logo(href='index.html')
+         img(src="./img/icons/main-logo.svg", alt="logo")
+      nav.header__menu 
+         ul.header__menu-list 
+            li 
+               a(href="#mission") Наша миссия
+            li 
+               a(href="#advantages") Преимущества
+            li.header__drop-menu Формат обучения
+               ul
+                  li
+                     a(href="#bunner") Бесплатный урок
+                  li
+                     a(href="#offline") Offline in Tbilisi
+                  li
+                     a(href="#online") Online courses
+            li 
+               a(href="#reviews") Отзывы 
+            li 
+               a(href="#contacts") Контакты
+      include ../modules/burger.pug

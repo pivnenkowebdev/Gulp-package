@@ -3,4 +3,9 @@
    height: 536px;
    border-radius: 50px;
    overflow: hidden;
+
+      @media (max-width: 1440px) {
+         width: 550px;
+         height: 400px;
+      }
 }

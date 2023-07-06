@@ -9,6 +9,10 @@
    
    .wrapper-block-title{
       margin-bottom: 50px;
+
+      @media (max-width: 1440px) {
+         margin-bottom: 20px;
+      }
    }
    
    .contacts__info{
@@ -33,4 +37,8 @@
       }
    }
 
+   @media (max-width: 1440px) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
 }

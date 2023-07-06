@@ -88,20 +88,39 @@
 .block-title{
    font-size: 57px;
    font-weight: 700;
+
+   @media (max-width: 1440px) {
+       
+      font-size: 36px;
+      font-weight: 600;
+
+   }
 }
 
 .reviews,.contacts{
+   
    .wrapper-block-title{
       max-width: 1160px;
       margin: 0 auto;
+
    }
+
 }
 
 .wrapper-context-title{
    margin-bottom: 30px;
+
+      @media (max-width: 1199px) {
+         margin-bottom: 15px;
+      }
 }
 
 .context-title{
    font-size: 24px;
    font-weight: 700;
+
+      @media (max-width: 1440px) {
+         font-size: 18px;
+         font-weight: 500;
+      }
 }

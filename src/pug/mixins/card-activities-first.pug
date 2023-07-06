@@ -1,7 +1,7 @@
 mixin cardFirst(number,title,subtitle,descriptionFirst,descriptionSecond,descriptionTree,descriptionFour,link)
-   .card-activities.card-activities--first 
+   .card-activities.card-activities--first
       .card-activities__content
-         p.card-activities__number #{number} 
+         p.card-activities__number #{number}
          h3.card-activities__title #{title}
          p.card-activities__subtitle #{subtitle}
          ul.card-activities__description
@@ -13,9 +13,6 @@ mixin cardFirst(number,title,subtitle,descriptionFirst,descriptionSecond,descrip
          .card-activities__fake-block
             .card-activities__circles
                img(src = './img/card/subtract.svg', alt="circles")
-            .card-activities__shadow.card-activities__shadow--first 
-            .card-activities__shadow.card-activities__shadow--second 
-            .card-activities__shadow.card-activities__shadow--tree
-
-         
-      
+            .overlay.overlay--first
+            .overlay.overlay--second
+            .overlay.overlay--third

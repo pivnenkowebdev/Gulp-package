@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
   
-  
   // init slider
   $('.reviews-slider').slick({
     draggable: true,
@@ -254,5 +253,35 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // mobile
+      // mobile-menu
+      const burger = document.querySelector('.burger');
+      const mobileMenu = document.querySelector('.header__mobile .header__menu');
+      const mobileLink = document.querySelectorAll('.header__mobile .header__menu a')
+
+      // open\close mobile menu
+      burger.addEventListener('click',function(){
+         burger.classList.toggle('active');
+         mobileMenu.classList.toggle('active');
+         document.body.classList.toggle('active')
+      })
+
+      // close mobile menu when click to link
+      mobileLink.forEach((item)=>{
+         item.addEventListener('click',()=>{
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('active');
+         })
+      })
+
+      // resize and close mobile menu
+      window.addEventListener('resize',function(){
+         burger.classList.remove('active');
+         mobileMenu.classList.remove('active');
+         document.body.classList.remove('active');
+      })
+
 
 })
