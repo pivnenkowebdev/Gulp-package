@@ -34,6 +34,10 @@
 
 .wrapper-section-title{
    margin-bottom: 30px;
+
+      @media (max-width: 1440px) {
+         margin-bottom: 10px;
+      }
 }
 
 

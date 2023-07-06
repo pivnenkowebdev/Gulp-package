@@ -12,6 +12,10 @@
 
    &:not(:last-child){
       margin-bottom: 150px;
+
+      @media (max-width: 1440px) {
+         margin-bottom: 100px;
+      }
    }
 } 
 
@@ -21,5 +25,9 @@
    grid-auto-rows: 700px;
    column-gap: 30px;
    justify-content: center;
+   
+   @media (max-width: 1440px) {
+      grid-template-columns: repeat(3,300px);
+   }
 } 
 }

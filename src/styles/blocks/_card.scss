@@ -51,6 +51,10 @@
    padding-top: 6px;
    padding-bottom: 24px;
    min-height: 700px;
+
+      @media (max-width: 1440px) {
+         min-height: 720px;
+      }
 }
 
 .card-activities__fake-block{
@@ -106,6 +110,10 @@ transition: color 0.3s 0.5s;
    font-weight: 600;
    margin-bottom: 14px;
    transition: color 0.3s 0.5s;
+
+   @media (max-width: 1440px) {
+      font-size: 18px;
+   }
 } 
 
 .card-activities__subtitle{
@@ -113,6 +121,10 @@ transition: color 0.3s 0.5s;
    color: $colorSubtitleCard;
    margin-bottom: 30px;
    font-weight: 500;
+
+   @media (max-width: 1440px) {
+      line-height: 1.05;
+   }
 } 
 
 .card-activities__description{
