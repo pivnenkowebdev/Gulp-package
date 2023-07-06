@@ -213,11 +213,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
       })
 
-    }}
-
-
-
-  )()
+    }})()
 
   // scroll
   // smooth scroll to anchor-link
@@ -240,4 +236,23 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
   });
+
+// drop-menu-list
+  const btnOpenDropMenu = document.querySelectorAll('.header__drop-menu');
+  const linksDropMenu = document.querySelectorAll('.header__drop-menu a');
+
+  btnOpenDropMenu.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      e.target.classList.toggle('active');
+    });
+  });
+
+  linksDropMenu.forEach((item) => {
+    item.addEventListener('click', () => {
+      btnOpenDropMenu.forEach((menu) => {
+        menu.classList.remove('active');
+      });
+    });
+  });
+
 })
