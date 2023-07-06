@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     dots: true,
     speed: 2000,
     infinite: true,
