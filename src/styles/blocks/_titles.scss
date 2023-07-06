@@ -40,6 +40,10 @@
 .section-title{
    font-size: 57px;
    font-weight: 700;
+
+   @media (max-width: 1440px) {
+      font-size: 40px;
+   }
 }
 
 .section-title__first-part{

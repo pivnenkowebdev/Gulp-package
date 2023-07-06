@@ -1,6 +1,11 @@
 .about-us{
    padding-top: 300px;
    padding-bottom: 200px;
+
+   @media (max-width: 1440px) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
 }
 
 .about-us__content{
@@ -19,12 +24,20 @@
 
    &:not(:last-child){
       margin-bottom: 350px;
+
+      @media (max-width: 1440px) {
+         margin-bottom: 150px;
+      }
    }
 }
 
 .about-us__info{
-   width: 601px;
+   max-width: 601px;
    position: relative;
+
+   @media (max-width: 1440px) {
+      // width: 400px;
+   }
 }
 
 
