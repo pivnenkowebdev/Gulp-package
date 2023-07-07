@@ -9,6 +9,10 @@
       padding-top: 150px;
       padding-bottom: 30px;
    }
+
+   @media (max-width: 1024px) {
+      padding-top: 100px;
+   }
 }
 
 .preview__content{
@@ -23,5 +27,10 @@
 
    @media (max-width: 1440px) {
       column-gap: 30px;
+   }
+
+   @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      row-gap: 50px;
    }
 }

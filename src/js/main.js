@@ -289,6 +289,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
             document.body.classList.remove('active');
 
+            overlay.forEach((item)=>{
+
+              item.classList.remove('active');
+    
+            })
         })
 
       })
@@ -302,6 +307,12 @@ window.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.remove('active');
 
         document.body.classList.remove('active');
+
+        overlay.forEach((item)=>{
+
+          item.classList.remove('active');
+
+        })
 
       })
 

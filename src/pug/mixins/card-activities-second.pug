@@ -1,16 +1,17 @@
 mixin cardSecond(number,title,subtitle,descriptionFirst,descriptionSecond,link)
    .card-activities.card-activities--second 
       .card-activities__content
-         p.card-activities__number #{number} 
+         p.card-activities__number #{number}
+         .card-activities__item
             block 
-         p.card-activities__subtitle #{subtitle}
-         .card-activities__description
-            p #{descriptionFirst}
-            p #{descriptionSecond}
+            p.card-activities__subtitle #{subtitle}
+            .card-activities__description
+               p #{descriptionFirst}
+               p #{descriptionSecond}
          a.context-link(href = 'https://forms.gle/wvABnB8oGtSCXxeQ6' target='blank') Заполнить форму
-         .card-activities__fake-block
-            .card-activities__circles
-               img(src = './img/card/subtract.svg', alt="circles")
-            .overlay.overlay--first
-            .overlay.overlay--second
-            .overlay.overlay--tree
+            .card-activities__fake-block
+               .card-activities__circles
+                  img(src = './img/card/subtract.svg', alt="circles")
+               .overlay.overlay--first
+               .overlay.overlay--second
+               .overlay.overlay--tree

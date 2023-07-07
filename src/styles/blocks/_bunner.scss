@@ -65,6 +65,11 @@
       width: 185px;
       height: 185px;
    }
+
+   @media (max-width: 1024px) {
+      bottom: -25%;
+      right: -8%;
+   }
 }
 
 .bunner__circles-item{
@@ -101,6 +106,7 @@
          height: 250px;
       }
    }
+
 }
 
 .bunner__icon{
@@ -140,6 +146,27 @@
       &--last{
          bottom: 5%;
          right: 9%;
+         filter: drop-shadow(0 0 20px #34b8f5);
+      }
+   }
+
+   @media (max-width: 1024px) {
+
+      width: 80px;
+
+      &--first{
+         bottom: 30%;
+         right: -2%;
+         filter: drop-shadow(0 0 20px #FF577F);
+      }
+      &--second{
+         bottom: 22%;
+         right:7%;
+         filter: drop-shadow(0 0 20px #e6cb2f);
+      }
+      &--last{
+         bottom: 2%;
+         right: 12%;
          filter: drop-shadow(0 0 20px #34b8f5);
       }
    }

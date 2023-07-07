@@ -22,7 +22,7 @@
 .activities__row-card{
    display: grid;
    grid-template-columns: repeat(3,360px);
-   grid-auto-rows: 700px;
+   grid-auto-rows: minmax(700px, auto);
    column-gap: 30px;
    justify-content: center;
    
