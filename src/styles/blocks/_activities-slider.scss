@@ -1,0 +1,53 @@
+.activities-slider{
+   display: none;
+
+   @media (max-width: 1024px) {
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+      min-height: 400px;
+
+      .context-link{
+         font-size: 20px;
+      }
+   }
+
+   @media (max-width: 768px) {
+      max-width: 100%;
+      width: 100%;
+   }
+}
+
+.card-activities__content--slider{
+   min-height: 300px;
+   padding-bottom: 30px;
+}
+
+.card-activities__item--slider{
+   min-height: 300px;
+}
+
+.card-activities__number--slider{
+   font-size: 80px;
+   margin-bottom: 200px;
+
+   @media (max-width: 375px) {
+      margin-bottom: 150px;
+   }
+}
+
+.card-activities__title--slider{
+   font-size: 30px;
+
+   @media (max-width: 425px) {
+      font-size: 22px;
+   }
+}
+
+
+
+
+.card-activities__circles--slider{
+   max-width: 400px;
+   width: 100%;
+}

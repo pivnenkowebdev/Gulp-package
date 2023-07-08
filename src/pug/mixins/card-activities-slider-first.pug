@@ -1,0 +1,19 @@
+mixin cardFirstSlider(number,title,subtitle,descriptionFirst,descriptionSecond,descriptionTree,descriptionFour,link)
+   .card-activities.card-activities--first
+      .card-activities__content.card-activities__content--slider
+         p.card-activities__number.card-activities__number--slider #{number}
+            .card-activities__item.card-activities__item--slider
+               h3.card-activities__title.card-activities__title--slider #{title}
+               p.card-activities__subtitle #{subtitle}
+               ul.card-activities__description
+                  li #{descriptionFirst}
+                  li #{descriptionSecond}
+                  li #{descriptionTree}
+                  li #{descriptionFour}
+            a.context-link(href = link target='blank') Узнать больше
+               .card-activities__fake-block
+                  .card-activities__circles.card-activities__circles--slider
+                     img(src = './img/card/subtract.svg', alt="circles")
+                  .overlay.overlay--first
+                  .overlay.overlay--second
+                  .overlay.overlay--third
