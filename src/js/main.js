@@ -40,7 +40,31 @@ window.addEventListener('DOMContentLoaded', () => {
   </svg>
   
   </div>`,
-});
+   responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        speed: 2000,
+        slidesToShow: 1,
+        infinite: true,
+        centerMode: false,
+        touchThreshold: 100,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        speed: 2000,
+        slidesToShow: 1,
+        centerMode: false,
+        infinite: true,
+        arrows: false,
+        touchThreshold: 100,
+      }
+    }
+    
+  ]
+  });
 
 // Gsap
 (()=>{
