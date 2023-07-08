@@ -209,6 +209,14 @@ window.addEventListener('DOMContentLoaded', () => {
         ease: 'power2.out' 
         },'<');
 
+      gsap.to(
+        '.bunner__shadow-circle', 
+        {
+        x: mouseX * 0.03, 
+        y: mouseY * 0.03, 
+        ease: 'power2.out' 
+        },'<');
+
     
       })
 

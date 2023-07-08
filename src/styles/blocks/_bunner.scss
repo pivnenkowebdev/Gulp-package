@@ -109,6 +109,17 @@
 
 }
 
+.bunner__shadow-circle{
+   position: absolute;
+   bottom: -40%;
+   right: 30%;
+
+   @media (max-width: 1440px) {
+      bottom: -180px;
+      right: 350px;
+   }
+}
+
 .bunner__icon{
    width: 150px;
    position: absolute;
@@ -132,42 +143,34 @@
    @media (max-width: 1440px) {
 
       width: 80px;
-
+      
       &--first{
-         bottom: 30%;
-         right: -2%;
-         filter: drop-shadow(0 0 20px #FF577F);
+         bottom: 80px;
+         right: -20px;
       }
       &--second{
-         bottom: 35%;
-         right:6%;
-         filter: drop-shadow(0 0 20px #e6cb2f);
+         bottom: 120px;
+         right:70px;
       }
       &--last{
-         bottom: 5%;
-         right: 9%;
-         filter: drop-shadow(0 0 20px #34b8f5);
+         bottom: 30px;
+         right: 110px;
       }
    }
 
    @media (max-width: 1024px) {
 
-      width: 80px;
-
-      &--first{
-         bottom: 30%;
-         right: -2%;
-         filter: drop-shadow(0 0 20px #FF577F);
+     &--first{
+         bottom: 50px;
+         right: -20px;
       }
       &--second{
-         bottom: 22%;
-         right:7%;
-         filter: drop-shadow(0 0 20px #e6cb2f);
+         bottom: 70px;
+         right:70px;
       }
       &--last{
-         bottom: 2%;
-         right: 12%;
-         filter: drop-shadow(0 0 20px #34b8f5);
+         bottom: 0;
+         right: 100px;
       }
    }
 }
