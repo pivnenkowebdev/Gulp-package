@@ -118,6 +118,13 @@
       bottom: -180px;
       right: 350px;
    }
+
+   @media (max-width: 1024px) {
+      right: 25%;
+      bottom: -90px;
+      width: 200px;
+   }
+
 }
 
 .bunner__icon{

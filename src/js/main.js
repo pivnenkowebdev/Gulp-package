@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>`,
    responsive: [
     {
-      breakpoint: 1440,
+      breakpoint: 1441,
       settings: {
         speed: 2000,
         slidesToShow: 1,

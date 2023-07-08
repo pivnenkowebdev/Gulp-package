@@ -8,6 +8,7 @@
 
    @media (max-width: 1024px) {
       text-align: center;
+      width: 320px;
    }
 }
 
@@ -18,5 +19,9 @@
 
    @media (max-width: 1024px) {
       font-size: 22px;
+   }
+
+   @media (max-width: 768px) {
+      font-size: 16px;
    }
 }

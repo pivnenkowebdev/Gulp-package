@@ -2,13 +2,26 @@
    padding-top: 100px;
    padding-bottom: 60px;
    background: -webkit-linear-gradient(107deg, #ffffff,#88addd,#ac9ce8);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(107deg, #ffffff,#88addd,#ac9ce8);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                                    
-   
    border-radius: 50% 50% 0 0 / 10% 10% 0 0;
+
+   @media (max-width: 1024px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   @media (max-width: 768px) {
+   border-radius: 50% 50% 0 0 / 5% 5% 0 0;
+   }
 
    &__content{
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: 1024px) {
+         flex-direction: column;
+         row-gap: 50px;
+      }
    }
 
    &__copyright{
