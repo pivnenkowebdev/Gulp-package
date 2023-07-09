@@ -50,13 +50,13 @@
 
 .wrapper-section-title{
    margin-bottom: 30px;
-
-      @media (max-width: 1440px) {
-         margin-bottom: 10px;
-      }
-
-      @media (max-width: 1024px) {
-       
+   
+   @media (max-width: 1440px) {
+      margin-bottom: 10px;
+   }
+   
+   @media (max-width: 425px) {
+         margin-bottom: 6px;
       }
 }
 
@@ -71,6 +71,10 @@
 
    @media (max-width: 1024px) {
       font-size: 30px;
+   }
+
+   @media (max-width: 375px) {
+      font-size: 26px;
    }
 
 }
@@ -89,6 +93,10 @@
 
 .wrapper-section-subtitle{
    margin-bottom: 30px;
+
+   @media (max-width: 425px) {
+      margin-bottom: 10px;
+   }
 }
 
 .section-subtitle{
@@ -97,6 +105,10 @@
    
    @media (max-width: 1024px) {
       font-size: 26px;
+   }
+
+   @media (max-width: 375px) {
+      font-size: 20px;
    }
 }
 

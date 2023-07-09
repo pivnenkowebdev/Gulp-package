@@ -1,14 +1,27 @@
-.activities-slider{
+.activities-slider-first,
+.activities-slider-second{
    display: none;
+   position: relative;
 
    @media (max-width: 1024px) {
       display: block;
       max-width: 90%;
       margin: 0 auto;
       min-height: 400px;
-
+      border-radius: 32px;
+      z-index: 2;
+      
       .context-link{
          font-size: 20px;
+
+         @media (max-width: 1024px) {
+            margin-bottom: 50px;
+         }
+
+          @media (max-width: 425px) {
+         font-size: 16px;
+         }
+
       }
    }
 
@@ -16,38 +29,83 @@
       max-width: 100%;
       width: 100%;
    }
-}
 
-.card-activities__content--slider{
-   min-height: 300px;
-   padding-bottom: 30px;
-}
+   .slick-dots{
+      position: absolute;
+      height: 25px;
+      bottom: -5%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex; 
+      column-gap: 20px;
+   }
 
-.card-activities__item--slider{
-   min-height: 300px;
-}
+   .wrapper-arrows{
+      position: relative;
 
-.card-activities__number--slider{
-   font-size: 80px;
-   margin-bottom: 200px;
+      .slick-prev{
+         left: 0;
+      }
 
-   @media (max-width: 375px) {
-      margin-bottom: 150px;
+      .slick-next{
+         right: 0;
+      }
+
+   }
+
+   // cards
+   .card-activities__content{
+      min-height: 300px;
+      padding-bottom: 50px;
+      border-radius: 32px;
+   }
+
+   .card-activities__item{
+      min-height: 300px;
+   }
+   
+   .card-activities__description{
+      margin-bottom: 20px;
+   }
+
+   .card-activities__number{
+      font-size: 80px;
+      margin-bottom: 200px;
+   
+      @media (max-width: 375px) {
+         margin-bottom: 150px;
+      }
+   }
+   
+   .card-activities__title{
+      font-size: 30px;
+   
+      @media (max-width: 425px) {
+         font-size: 22px;
+      }
+
+      @media (max-width: 425px) {
+      font-size: 20px;
+      }
+   }
+   
+   .card-activities__subtitle{
+       @media (max-width: 425px) {
+      font-size: 16px;
+      }
+   }
+
+   .card-activities__circles{
+      max-width: 400px;
+      width: 100%;
+   }
+   
+   .card-activities__fake-block{
+      border-radius: 32px;
+   }
+
+   .overlay{
+      display: none;
    }
 }
 
-.card-activities__title--slider{
-   font-size: 30px;
-
-   @media (max-width: 425px) {
-      font-size: 22px;
-   }
-}
-
-
-
-
-.card-activities__circles--slider{
-   max-width: 400px;
-   width: 100%;
-}

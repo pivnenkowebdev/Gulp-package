@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
   
-  // init slider
+  // reviews slider
   $('.reviews-slider').slick({
     draggable: true,
     centerMode: true,
@@ -66,185 +66,218 @@ window.addEventListener('DOMContentLoaded', () => {
   ]
   });
 
+  // cards-slider-first
+  $('.activities-slider-first').slick({
+    draggable: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade:true,
+    // autoplay: true,
+    arrows: true,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'),
+    dots: true,
+    speed: 2000,
+    infinite: true,
+    touchThreshold: 100,
+
+  });
+
+  // cards-slider-second
+  $('.activities-slider-second').slick({
+    draggable: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade:true,
+    // autoplay: true,
+    arrows: true,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'),
+    dots: true,
+    speed: 2000,
+    infinite: true,
+    touchThreshold: 100,
+
+  });
 // Gsap
-(()=>{
+// (()=>{
   
   
-  const tlPreview = gsap.timeline({})
+//   const tlPreview = gsap.timeline({})
   
-  tlPreview.from('.author',{
-    x:-400,
-    duration:2,
-    opacity:0,
-    ease:"back.out(1.5)",
+//   tlPreview.from('.author',{
+//     x:-400,
+//     duration:2,
+//     opacity:0,
+//     ease:"back.out(1.5)",
     
-  })
+//   })
 
-  tlPreview.call(parallax);
+//   tlPreview.call(parallax);
 
-  gsap.from('#values',{
-    x:400,
-    opacity:0,
-    scrollTrigger:{
-            // markers:true,
-            trigger:'#values',  
-            start:'-100% center',
-            end:'center 60%',
-            opacity:1,
-            scrub:1.5, 
-            toggleActions:'play reverse play reverse',
-            }
-  })
+//   gsap.from('#values',{
+//     x:400,
+//     opacity:0,
+//     scrollTrigger:{
+//             // markers:true,
+//             trigger:'#values',  
+//             start:'-100% center',
+//             end:'center 60%',
+//             opacity:1,
+//             scrub:1.5, 
+//             toggleActions:'play reverse play reverse',
+//             }
+//   })
 
-  gsap.from('#headTeacher',{
-    x:-400,
-    opacity:0,
-    scrollTrigger:{
-            // markers:true,
-            trigger:'#headTeacher',  
-            start:'-100% center',
-            end:'center 60%',
-            opacity:1,
-            scrub:1.5, 
-            toggleActions:'play reverse play reverse',
-            }
-  })
+//   gsap.from('#headTeacher',{
+//     x:-400,
+//     opacity:0,
+//     scrollTrigger:{
+//             // markers:true,
+//             trigger:'#headTeacher',  
+//             start:'-100% center',
+//             end:'center 60%',
+//             opacity:1,
+//             scrub:1.5, 
+//             toggleActions:'play reverse play reverse',
+//             }
+//   })
 
-  gsap.from('.card-activities--first',{
-    stagger:0.3,
-    opacity:0,
-    y:200,
-    scrollTrigger:{
-        // markers:true,
-        trigger: '.activities',
-        start: 'top 70%',
-        end:'20% 50%',
-        scrub:1.5,
-        toggleActions: 'play none none reverse',
-    }
-  })
+//   gsap.from('.card-activities--first',{
+//     stagger:0.3,
+//     opacity:0,
+//     y:200,
+//     scrollTrigger:{
+//         // markers:true,
+//         trigger: '.activities',
+//         start: 'top 70%',
+//         end:'20% 50%',
+//         scrub:1.5,
+//         toggleActions: 'play none none reverse',
+//     }
+//   })
 
-  gsap.from('.card-activities--second',{
-    stagger:0.3,
-    opacity:0,
-    y:200,
-    scrollTrigger:{
-        // markers:true,
-        trigger: '.card-activities--second',
-        start: 'top 90%',
-        end:'30% 60%',
-        scrub:1.5,
-        toggleActions: 'play none none reverse',
-    }
-  })
+//   gsap.from('.card-activities--second',{
+//     stagger:0.3,
+//     opacity:0,
+//     y:200,
+//     scrollTrigger:{
+//         // markers:true,
+//         trigger: '.card-activities--second',
+//         start: 'top 90%',
+//         end:'30% 60%',
+//         scrub:1.5,
+//         toggleActions: 'play none none reverse',
+//     }
+//   })
 
   
 
-  function parallax(){
+//   function parallax(){
     
-    const preview = document.querySelector('.preview');
-    const initialX = preview.offsetLeft + preview.offsetWidth / 2;
-    const initialY = preview.offsetTop + preview.offsetHeight / 2;
+//     const preview = document.querySelector('.preview');
+//     const initialX = preview.offsetLeft + preview.offsetWidth / 2;
+//     const initialY = preview.offsetTop + preview.offsetHeight / 2;
     
-      document.addEventListener('mousemove', function(event) {
+//       document.addEventListener('mousemove', function(event) {
     
-      const mouseX = event.clientX - initialX;
-      const mouseY = event.clientY - initialY;
+//       const mouseX = event.clientX - initialX;
+//       const mouseY = event.clientY - initialY;
 
-    // preview
-      gsap.to(
-        '.avatar__parallax-img--first', 
-        {
-        x: mouseX * 0.05, 
-        y: mouseY * 0.05, 
-        ease: 'power2.out' 
-        },);
+//     // preview
+//       gsap.to(
+//         '.avatar__parallax-img--first', 
+//         {
+//         x: mouseX * 0.05, 
+//         y: mouseY * 0.05, 
+//         ease: 'power2.out' 
+//         },);
 
-      gsap.to(
-        '.avatar__parallax-img--second', 
-        {
-        x: mouseX * 0.03, 
-        y: mouseY * 0.03, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.avatar__parallax-img--second', 
+//         {
+//         x: mouseX * 0.03, 
+//         y: mouseY * 0.03, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.avatar__photo--preview', 
-        {
-        x: mouseX * 0.01, 
-        y: mouseY * 0.01, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.avatar__photo--preview', 
+//         {
+//         x: mouseX * 0.01, 
+//         y: mouseY * 0.01, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.author', 
-        {
-        x: mouseX * 0.01, 
-        y: mouseY * 0.01, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.author', 
+//         {
+//         x: mouseX * 0.01, 
+//         y: mouseY * 0.01, 
+//         ease: 'power2.out' 
+//         },'<');
 
-        // bunner
-      gsap.to(
-        '.bunner__icon--first', 
-        {
-        x: mouseX * 0.02, 
-        y: mouseY * 0.02, 
-        ease: 'power2.out' 
-        },'<');
+//         // bunner
+//       gsap.to(
+//         '.bunner__icon--first', 
+//         {
+//         x: mouseX * 0.02, 
+//         y: mouseY * 0.02, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.bunner__icon--second', 
-        {
-        x: mouseX * 0.03, 
-        y: mouseY * 0.03, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.bunner__icon--second', 
+//         {
+//         x: mouseX * 0.03, 
+//         y: mouseY * 0.03, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.bunner__icon--last', 
-        {
-        x: mouseX * 0.02, 
-        y: mouseY * 0.02, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.bunner__icon--last', 
+//         {
+//         x: mouseX * 0.02, 
+//         y: mouseY * 0.02, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.bunner__circles-item--big', 
-        {
-        x: mouseX * 0.03, 
-        y: mouseY * 0.03, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.bunner__circles-item--big', 
+//         {
+//         x: mouseX * 0.03, 
+//         y: mouseY * 0.03, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.bunner__circles-item--medium', 
-        {
-        x: mouseX * 0.02, 
-        y: mouseY * 0.02, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.bunner__circles-item--medium', 
+//         {
+//         x: mouseX * 0.02, 
+//         y: mouseY * 0.02, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.bunner__circles-item--small', 
-        {
-        x: mouseX * 0.01, 
-        y: mouseY * 0.01, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.bunner__circles-item--small', 
+//         {
+//         x: mouseX * 0.01, 
+//         y: mouseY * 0.01, 
+//         ease: 'power2.out' 
+//         },'<');
 
-      gsap.to(
-        '.bunner__shadow-circle', 
-        {
-        x: mouseX * 0.03, 
-        y: mouseY * 0.03, 
-        ease: 'power2.out' 
-        },'<');
+//       gsap.to(
+//         '.bunner__shadow-circle', 
+//         {
+//         x: mouseX * 0.03, 
+//         y: mouseY * 0.03, 
+//         ease: 'power2.out' 
+//         },'<');
 
     
-      })
+//       })
 
-    }})()
+//     }})()
 
   // scroll
   // smooth scroll to anchor-link

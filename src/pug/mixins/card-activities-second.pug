@@ -3,7 +3,7 @@ mixin cardSecond(number,title,subtitle,descriptionFirst,descriptionSecond,link)
       .card-activities__content
          p.card-activities__number #{number}
          .card-activities__item
-            block 
+            h3.card-activities__title !{title} 
             p.card-activities__subtitle #{subtitle}
             .card-activities__description
                p #{descriptionFirst}
@@ -15,3 +15,4 @@ mixin cardSecond(number,title,subtitle,descriptionFirst,descriptionSecond,link)
                .overlay.overlay--first
                .overlay.overlay--second
                .overlay.overlay--tree
+         block
