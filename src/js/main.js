@@ -66,39 +66,28 @@ window.addEventListener('DOMContentLoaded', () => {
   ]
   });
 
-  // cards-slider-first
-  $('.activities-slider-first').slick({
-    draggable: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade:true,
-    // autoplay: true,
-    arrows: true,
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next'),
-    dots: true,
-    speed: 2000,
-    infinite: true,
-    touchThreshold: 100,
+  // cards-slider
+  $('.activities-slider').each(function(){
+    var $slider = $(this);
+    const $prevArrow = $slider.find('.slick-prev');
+    const $nextArrow = $slider.find('.slick-next');
+    $(this).slick({
+      draggable: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade:true,
+      // autoplay: true,
+      arrows: true,
+      prevArrow: $prevArrow,
+      nextArrow: $nextArrow,
+      dots: true,
+      speed: 500,
+      infinite: true,
+      touchThreshold: 100,
+    });
+  })
+  
 
-  });
-
-  // cards-slider-second
-  $('.activities-slider-second').slick({
-    draggable: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade:true,
-    // autoplay: true,
-    arrows: true,
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next'),
-    dots: true,
-    speed: 2000,
-    infinite: true,
-    touchThreshold: 100,
-
-  });
 // Gsap
 // (()=>{
   

@@ -1,5 +1,4 @@
-.activities-slider-first,
-.activities-slider-second{
+.activities-slider{
    display: none;
    position: relative;
 
@@ -7,7 +6,6 @@
       display: block;
       max-width: 90%;
       margin: 0 auto;
-      min-height: 400px;
       border-radius: 32px;
       z-index: 2;
       
