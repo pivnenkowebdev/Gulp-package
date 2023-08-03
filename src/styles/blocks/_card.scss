@@ -1,6 +1,7 @@
 
 .card-activities{
    border-radius: 32px;
+   height: 100%;
       
    @media(min-width:1025px){
    &:hover{
@@ -28,6 +29,10 @@
 
    }
 }
+
+.context-link{
+   margin-top: auto;
+}
 }
 
 .card-activities__content{
@@ -37,7 +42,8 @@
    padding-right: 30px;
    padding-top: 6px;
    padding-bottom: 24px;
-   min-height: 800px;
+   // min-height: 800px;
+   height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -72,7 +78,7 @@
 color: #39393940;
 font-size: 86px;
 font-weight: 500;
-margin-bottom: 100px;
+margin-bottom: 150px;
 transition: color 0.3s 0.5s;
 
    @media (max-width: 1440px) {

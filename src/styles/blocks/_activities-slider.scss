@@ -53,13 +53,13 @@
 
    // cards
    .card-activities__content{
-      min-height: 300px;
+      // min-height: 300px;
       padding-bottom: 50px;
       border-radius: 32px;
    }
 
    .card-activities__item{
-      min-height: 300px;
+      // min-height: 300px;
    }
    
    .card-activities__description{
@@ -68,7 +68,7 @@
 
    .card-activities__number{
       font-size: 80px;
-      margin-bottom: 200px;
+      margin-bottom: 50px;
    
       @media (max-width: 375px) {
          margin-bottom: 150px;
