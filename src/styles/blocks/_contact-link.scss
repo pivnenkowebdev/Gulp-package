@@ -1,3 +1,4 @@
+
 .wrapper-social-links{
    display: flex;
    align-items: center;
@@ -31,6 +32,7 @@
       }
       
    }
+
 }
 
 .context-link{
@@ -52,4 +54,13 @@
       @media (max-width: 768px) {
          font-size: 14px;
       }
+}
+
+@media(min-width:1025px){
+   .header a:hover,
+   .about-us a:hover,
+   .contacts a:hover,
+   .footer a:hover{
+      opacity: 0.7;
+   }
 }

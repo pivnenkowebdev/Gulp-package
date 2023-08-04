@@ -82,7 +82,7 @@ function scripts() {
   .pipe(sourcemaps.init())
   .pipe(uglify())
   // .pipe(concat('main.min.js'))
-  // .pipe(sourcemaps.write('.'))
+  .pipe(sourcemaps.write('.'))
   .pipe(size({
     showFiles:true
   }))
